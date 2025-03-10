@@ -48,7 +48,7 @@ function yesButtonListener(){
 function noButtonListener(){
     if (count < 3) {
         gifMain.src ="https://media.giphy.com/media/hbOgjMOUfLdWV2Ty1j/giphy.gif";
-        questionMain.innerHTML = "You don't love me,?" + input;
+        questionMain.innerHTML = "You don't love me, " + input + "?";
     }
     else if (count >= 3 && count < 6){
         gifMain.src ="https://media.giphy.com/media/QuCslOrnS649PSCnn7/giphy.gif";
