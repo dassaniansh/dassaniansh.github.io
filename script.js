@@ -46,17 +46,17 @@ function yesButtonListener(){
 }
 
 function noButtonListener(){
-    if (count < 5) {
+    if (count < 3) {
         gifMain.src ="https://media.giphy.com/media/hbOgjMOUfLdWV2Ty1j/giphy.gif";
-        questionMain.innerHTML = "You don't love me?";
+        questionMain.innerHTML = "You don't love me,?" + input;
     }
-    else if (count >= 5 && count < 10){
+    else if (count >= 3 && count < 6){
         gifMain.src ="https://media.giphy.com/media/QuCslOrnS649PSCnn7/giphy.gif";
-        questionMain.innerHTML = "Stop playing with me! Do you love me or not?!";
+        questionMain.innerHTML = "Stop playing with me " +input+ "! Do you love me or not?!";
     }
     else{
         gifMain.src ="https://media.giphy.com/media/8OPf6xrtXi3QEcu5h9/giphy.gif";
-        questionMain.innerHTML = "JUST ANSWER IT! DO YOU LOVE ME?!";
+        questionMain.innerHTML = "JUST ANSWER IT GG! DO YOU LOVE ME?!";
     }
     const noButtonRect = noButton.getBoundingClientRect();
     const maxX = window.innerWidth - noButtonRect.width;
