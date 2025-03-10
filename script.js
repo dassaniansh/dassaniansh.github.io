@@ -39,11 +39,22 @@ startButton.addEventListener("click", () => {
     }
 });
 
-function yesButtonListener(){
+function yesButtonListener_bp(){
     document.body.innerHTML = "<div class='wrapper'><h2 class='question'>Yay! Thank you for loving me ❤️, "+input+ "!</h2>"+
     "<img class='gif' alt='gif' src='https://media.giphy.com/media/fHGl1MDMNkO6fOaFDF/giphy.gif'/></div><script src='scriptMain.js'></script>"
     gifMain.src = "https://media.giphy.com/media/fHGl1MDMNkO6fOaFDF/giphy.gif";
 }
+
+function yesButtonListener() {
+    document.body.innerHTML = "<div class='wrapper'>" +
+        "<h2 class='question'>Yay! Thank you for loving me ❤️, " + input + "!</h2>" +
+        "<img class='gif' alt='gif' src='https://media.giphy.com/media/fHGl1MDMNkO6fOaFDF/giphy.gif'/>" +
+        "<img class='custom-img' alt='custom-img' src='https://drive.google.com/uc?export=view&id=1HLsyC6Tc8dA96nfFZevXmJb4aMQ2_TVk'/>" +
+        "</div><script src='scriptMain.js'></script>";
+
+    gifMain.src = "https://media.giphy.com/media/fHGl1MDMNkO6fOaFDF/giphy.gif";
+}
+
 
 function noButtonListener(){
     if (count < 3) {
